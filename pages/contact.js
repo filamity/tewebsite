@@ -3,6 +3,7 @@ import BreadcrumbGlobal from "../components/Breadcrumb";
 
 import Card from "../components/Card";
 import CopyToClipboard from "../components/CopyToClipboard";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -26,6 +27,13 @@ const Contact = () => {
                 19SongY@harrowschool.org.uk
               </a>
               <CopyToClipboard text="19SongY@harrowschool.org.uk" />
+            </div>
+            <div className={styles.signupcard}>
+                If you&apos;re interested in joining us, you can{" "}
+                <Link href="https://urls.teamenigma.ml/mailinglist" passHref>
+                  <span className="a">sign up here</span>
+                </Link>
+                !
             </div>
             {/* <section className="buffer-20"></section>
             <div>
