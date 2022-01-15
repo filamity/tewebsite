@@ -1,8 +1,8 @@
 import styles from "../styles/components/Logo.module.css";
 
-const Logo = ({ size = 30, background = "", style = {} }) => {
+const Logo = ({ size = 30, style = {} }) => {
   return (
-    <div className={styles.logo} style={{ background: background }}>
+    <div className={styles.logo}>
       <img
         src="/images/enigma_boldwhite.svg"
         width={size}

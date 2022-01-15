@@ -149,7 +149,7 @@ const Projects = () => {
             </div>
             <div>
               <Link href="https://projecteco.ml/" passHref>
-                <div className={styles.img}></div>
+                <div className={styles.img} data-project="projecteco"></div>
               </Link>
             </div>
           </div>
@@ -445,6 +445,39 @@ const Projects = () => {
             </Form>
           )}
         </div>
+        <section className="buffer-20"></section>
+        <Card className={styles.wrap}>
+          <h1 className="title">The Enigma Questions</h1>
+          <div className={styles.herogrid}>
+            <div>
+              <p>A series of computational problems by Team Enigma.</p>
+              <p>
+                These questions are designed to challenge people to use their
+                knowledge of data and algorithms to solve a problem.
+              </p>
+              <p>
+                The questions are designed to be as challenging as possible, but
+                not too hard once you&apos;ve got started.
+              </p>
+              <p>We hope you enjoy giving them a shot!</p>
+              <p>
+                Visit the website{" "}
+                <a className="a white" href="https://questions.teamenigma.ml/">
+                  here
+                </a>{" "}
+                to give the problems a try.
+              </p>
+            </div>
+            <div>
+              <Link href="https://questions.teamenigma.ml/" passHref>
+                <div
+                  className={styles.img}
+                  data-project="enigmaquestions"
+                ></div>
+              </Link>
+            </div>
+          </div>
+        </Card>
       </div>
     </div>
   );
