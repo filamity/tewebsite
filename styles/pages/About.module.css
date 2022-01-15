@@ -18,7 +18,6 @@
 
 .member {
   background-color: var(--green-2);
-  padding: 30px;
   height: 300px;
   border-radius: 5px;
   color: black;
@@ -26,6 +25,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 .member::before {
   content: "";
@@ -37,11 +37,14 @@
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 0.4;
+  opacity: 0.3;
   border-radius: 5px;
 }
 .member[data-member="dylan"]::before {
   background-image: url("../../public/images/about/dylan.jpg");
+}
+.member[data-member="david"]::before {
+  background-image: url("../../public/images/about/david.png");
 }
 .member[data-member="vincent"]::before {
   background-image: url("../../public/images/about/vincent.png");
@@ -51,6 +54,33 @@
 }
 .cardcontent {
   z-index: 5;
+}
+
+.cardfirstname,
+.cardlastname {
+  position: absolute;
+  font-size: clamp(6rem, 10vw, 8rem);
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px black;
+  opacity: 0.2;
+  pointer-events: none;
+}
+.cardfirstname {
+  top: 0;
+  left: 0;
+}
+.cardlastname {
+  bottom: 0;
+  right: 0;
+}
+.cardtextcontent {
+  position: absolute;
+  width: calc(100% - 60px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.3;
 }
 
 .output {

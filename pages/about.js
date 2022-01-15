@@ -45,39 +45,49 @@ const About = () => {
                 />
               </div>
             </div>
-            {/* <div className={styles.member}>
-              <div className={styles.cardcontent}>
-                <h2>David Xu</h2>
-              </div>
-            </div> */}
             <div className={styles.member} data-member="vincent">
               <div className={styles.cardcontent}>
-                <h2>Vincent Song</h2>
-                <div>
-                  Vincent is the founder of Team Enigma and easily charmed by
-                  everything AI. He hopes the team will help spread the
-                  technology and get more people to develop and grow with each
-                  other.
+                <div className={styles.cardfirstname}>Vincent</div>
+                <div className={styles.cardlastname}>Song</div>
+                <div className={styles.cardtextcontent}>
+                  <b>Vincent Song</b> is the founder of Team Enigma and easily
+                  charmed by everything AI. He hopes the team will help spread
+                  the technology and get more people to develop and grow with
+                  each other.
+                </div>
+              </div>
+            </div>
+            <div className={styles.member} data-member="david">
+              <div className={styles.cardcontent}>
+                <div className={styles.cardfirstname}>David</div>
+                <div className={styles.cardlastname}>Xu</div>
+                <div className={styles.cardtextcontent}>
+                  <b>David Xu</b> is a computer hardware enthusiast, with
+                  projects ranging from building and designing the 2020 Titan PC
+                  to CMOS SPICE simulations using LTSPICE. He co-founded the
+                  projects division for Team Enigma.
                 </div>
               </div>
             </div>
             <div className={styles.member} data-member="dylan">
               <div className={styles.cardcontent}>
-                <h2>Dylan Kainth</h2>
-                <div>
-                  Hi, I&apos;m Dylan. I&apos;m a 16-year-old tech enthusiast
-                  from London, UK; In my free time, I enjoy robotics,
-                  microelectronics, engineering and I love anything to do with
-                  the internet.
+                <div className={styles.cardfirstname}>Dylan</div>
+                <div className={styles.cardlastname}>Kainth</div>
+                <div className={styles.cardtextcontent}>
+                  <b>Dylan Kainth</b> is a 16-year-old tech enthusiast from
+                  London, UK; In his free time, he enjoys robotics,
+                  microelectronics and engineering, and he loves anything to do
+                  with the Internet.
                 </div>
               </div>
             </div>
             <div className={styles.member} data-member="george">
               <div className={styles.cardcontent}>
-                <h2>George Chan</h2>
-                <div>
-                  Hey - I&apos;m George, 16 and a tech hobbyist who loves web
-                  development. When I&apos;m not coding, I&apos;m probably
+                <div className={styles.cardfirstname}>George</div>
+                <div className={styles.cardlastname}>Chan</div>
+                <div className={styles.cardtextcontent}>
+                  <b>George Chan</b> is 16 and is a tech hobbyist who loves web
+                  development. When he&apos;s not coding, He&apos;s probably
                   learning a new hobby or looking for a new project to work on.
                 </div>
               </div>

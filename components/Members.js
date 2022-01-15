@@ -34,9 +34,11 @@ const Members = () => {
             <div className={`${styles.carouselitem} noselect`}>
               <Link href="/about" passHref>
                 <span className={`${styles.link} a`}>
-                  Learn
+                  Meet
                   <br />
-                  More
+                  the
+                  <br />
+                  Team
                   <ArrowRightShort size={75} />
                 </span>
               </Link>
