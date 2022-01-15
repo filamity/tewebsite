@@ -66,16 +66,16 @@ const NavGlobal = () => {
         <Offcanvas.Body className={styles.offcanvasbody}>
           <div>
             <Link href="/" passHref>
-              <Nav.Link>Home</Nav.Link>
+              <Nav.Link onClick={closeOffcanvas}>Home</Nav.Link>
             </Link>
             <Link href="/about" passHref>
-              <Nav.Link>About</Nav.Link>
+              <Nav.Link onClick={closeOffcanvas}>About</Nav.Link>
             </Link>
             <Link href="/projects" passHref>
-              <Nav.Link>Projects</Nav.Link>
+              <Nav.Link onClick={closeOffcanvas}>Projects</Nav.Link>
             </Link>
             <Link href="/contact" passHref>
-              <Nav.Link>Contact</Nav.Link>
+              <Nav.Link onClick={closeOffcanvas}>Contact</Nav.Link>
             </Link>
           </div>
         </Offcanvas.Body>
