@@ -14,7 +14,7 @@ const Members = () => {
     { first: "Aakash", last: "Aggarwal" },
     { first: "Jake", last: "Brockwell" },
   ];
-  
+
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
@@ -24,9 +24,10 @@ const Members = () => {
       <Carousel
         activeIndex={index}
         onSelect={handleSelect}
-        fade
         interval={9000}
         indicators={false}
+        pause={false}
+        fade
       >
         {names.map((name) => (
           <Carousel.Item key={name.last}>
