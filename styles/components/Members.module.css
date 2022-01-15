@@ -1,0 +1,72 @@
+.members {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: var(--green-7);
+  border-radius: 5px;
+}
+
+.link {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 0.8;
+  color: white;
+  font-size: 4rem;
+  z-index: 999;
+  opacity: 0.5;
+  white-space: nowrap;
+}
+.link svg {
+  margin-top: -5px;
+}
+
+.carouselitem {
+  background: var(--green-7);
+  border-radius: 5px;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.firstname,
+.lastname {
+  color: var(--green-5);
+  position: absolute;
+  line-height: 1.27;
+  font-size: 250px;
+  font-weight: bold;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+.firstname {
+  top: -20px;
+  left: -25px;
+  animation: movefirst 10s linear infinite;
+}
+@keyframes movefirst {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+}
+.lastname {
+  text-align: right;
+  bottom: -20px;
+  right: 0;
+  animation: movelast 10s linear infinite;
+}
+@keyframes movelast {
+  from {
+    right: 0;
+  }
+  to {
+    right: 100%;
+    transform: translateX(100%);
+  }
+}

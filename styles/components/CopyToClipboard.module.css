@@ -1,0 +1,13 @@
+.copytoclipboard {
+  display: inline;
+  background: none;
+  border: none;
+  color: inherit;
+  opacity: 0.5;
+  vertical-align: text-bottom;
+  margin: 0 5px;
+  transform: scale(0.9);
+}
+.copytoclipboard:hover {
+  opacity: 1;
+}

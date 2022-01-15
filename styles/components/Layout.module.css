@@ -1,0 +1,12 @@
+.container {
+  min-height: 100vh;
+  padding: 3%;
+  background-color: var(--green-2);
+}
+
+.main {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}

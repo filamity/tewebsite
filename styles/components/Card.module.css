@@ -1,0 +1,46 @@
+.card {
+  padding: 20px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 10px rgba(0, 0, 0, 0.1);
+}
+.card[data-variant="red"] {
+  background: var(--red);
+  color: white;
+}
+.card[data-variant="green-1"] {
+  background: var(--green-1);
+  color: white;
+}
+.card[data-variant="green-2"] {
+  background: var(--green-2);
+  color: white;
+}
+.card[data-variant="green-3"] {
+  background: var(--green-3);
+  color: white;
+}
+.card[data-variant="green-4"] {
+  background: var(--green-4);
+  color: white;
+}
+.card[data-variant="green-5"] {
+  background: var(--green-5);
+  color: white;
+}
+.card[data-variant="green-6"] {
+  background: var(--green-6);
+  color: white;
+}
+.card[data-variant="green-7"] {
+  background: var(--green-7);
+  color: white;
+}
+.card[data-variant="green-8"] {
+  background: var(--green-8);
+  color: white;
+}
+.card[data-variant="green-9"] {
+  background: var(--green-9);
+  color: white;
+}

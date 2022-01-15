@@ -1,16 +1,148 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/fonts/Poppins.ttf");
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "Fira Code";
+  src: url("../public/fonts/FiraCode.ttf");
 }
 
 * {
   box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins" !important;
+}
+
+:root {
+  --green-1: #66a6a4;
+  --green-2: #4d9795;
+  --green-3: #338886;
+  --green-4: #1a7977;
+  --green-5: #006a68;
+  --green-6: #005f5e;
+  --green-7: #005553;
+  --green-8: #004a49;
+  --green-9: #00403e;
+  --red: #dc3545;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold !important;
+}
+
+.a {
+  cursor: pointer;
+  text-decoration: none !important;
+  opacity: 0.8;
+}
+.a:hover {
+  text-decoration: underline !important;
+  opacity: 1;
+}
+
+.white {
+  color: white !important;
+}
+
+.image {
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.buffer-10 {
+  height: 10px;
+}
+.buffer-20 {
+  height: 20px;
+}
+.buffer-30 {
+  height: 30px;
+}
+.buffer-40 {
+  height: 40px;
+}
+.buffer-50 {
+  height: 50px;
+}
+.inlinebuffer-5 {
+  margin-left: 5px;
+}
+.inlinebuffer-10 {
+  margin-left: 10px;
+}
+.inlinebuffer-15 {
+  margin-left: 15px;
+}
+.inlinebuffer-20 {
+  margin-left: 20px;
+}
+.inlinebuffer-25 {
+  margin-left: 40px;
+}
+
+.btn-green-3 {
+  background-color: var(--green-3) !important;
+  color: white !important;
+}
+.btn-green-5 {
+  background-color: var(--green-5) !important;
+  color: white !important;
+}
+.btn-green-7 {
+  background-color: var(--green-7) !important;
+  color: white !important;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.displayflex {
+  display: flex;
+}
+
+.disable-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.line-height-1 {
+  line-height: 1;
 }

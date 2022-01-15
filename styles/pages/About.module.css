@@ -1,0 +1,87 @@
+.about {
+  color: white;
+}
+
+.herogrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+.playground {
+  grid-column: 1 / -1;
+  height: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  border-radius: 5px;
+}
+
+.member {
+  background-color: var(--green-2);
+  padding: 30px;
+  height: 300px;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.member::before {
+  content: "";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.4;
+  border-radius: 5px;
+}
+.member[data-member="dylan"]::before {
+  background-image: url("../../public/images/about/dylan.jpg");
+}
+.member[data-member="vincent"]::before {
+  background-image: url("../../public/images/about/vincent.png");
+}
+.member[data-member="george"]::before {
+  background-image: url("../../public/images/about/george.jpg");
+}
+.cardcontent {
+  z-index: 5;
+}
+
+.output {
+  position: relative;
+  background: white;
+  color: black;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+.output p {
+  font-size: 16px;
+}
+.input {
+  background: black;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 0 0 5px 5px;
+}
+@media (min-width: 768px) {
+  .herogrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .playground {
+    height: 300px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .output {
+    border-radius: 5px 0 0 5px;
+  }
+  .input {
+    border-radius: 0 5px 5px 0;
+  }
+}

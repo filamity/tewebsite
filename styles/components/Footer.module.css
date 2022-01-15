@@ -1,0 +1,14 @@
+.footer {
+  background: var(--green-5);
+  color: white;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.iconlink, .iconlink:hover {
+  color: white;
+}

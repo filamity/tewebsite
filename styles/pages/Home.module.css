@@ -1,0 +1,120 @@
+.herocard,
+.gridcard {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.herocard {
+  border-radius: 5px;
+  padding: 75px 10px;
+  background: var(--green-5);
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.bgsvg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  opacity: 0.1;
+}
+.teamenigma {
+  max-width: 320px;
+  z-index: 1;
+}
+.teamenigma strong {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.introtext {
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-top: 25px;
+}
+.herodemopc {
+  display: none;
+  color: black;
+  height: 500px;
+  width: 100%;
+}
+.herodemomobile {
+  margin-top: 20px;
+  display: block;
+  color: black;
+  width: 100%;
+}
+.cardgrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+.gridcard {
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+  background: var(--green-5);
+  color: white;
+  width: 100%;
+}
+.gridcardtitle,
+.gridcardtitle:hover {
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+}
+
+.signupcard {
+  padding: 15px 20px;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 10px rgba(0, 0, 0, 0.1);
+  background: var(--green-7);
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .herodemopc {
+    display: block;
+  }
+  .herodemomobile {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .teamenigma {
+    max-width: unset;
+  }
+  .teamenigma strong {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: left;
+  }
+  .herocard {
+    padding: 75px 10%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: unset;
+    justify-content: unset;
+  }
+  .introtext {
+    font-size: 1.5rem;
+  }
+  .cardgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gridcard {
+    text-align: left;
+  }
+}

@@ -1,0 +1,121 @@
+.projects {
+  color: white;
+}
+
+.wrap {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.survey {
+  position: relative;
+  background: var(--green-3);
+  border-radius: 5px;
+  padding: 10px;
+}
+.surveygroup {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+.surveycard {
+  background: var(--green-5);
+  border-radius: 5px;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+.surveyradio {
+  display: flex;
+  text-align: center;
+}
+.surveyradio label {
+  margin: 0 15px;
+}
+.surveyinput {
+  display: flex;
+  text-align: center;
+}
+.surveysubmit {
+  text-align: center;
+}
+.error {
+  color: red;
+}
+.surveycontrols {
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+}
+.pageno {
+  position: absolute;
+  font-size: 1rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.nextbtn {
+  margin-left: auto;
+}
+.surveythankyou {
+  background: var(--green-5);
+  border-radius: 5px;
+  height: 200px;
+  padding: 10px;
+  line-height: 1.2;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .surveygroup {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .survey,
+  .surveycard {
+    padding: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .surveygroup {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  .survey,
+  .surveycard {
+    padding: 15px;
+  }
+}
+
+.herogrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .herogrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.img {
+  cursor: pointer;
+  background-image: url("../../public/images/projects/project-eco.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  min-height: 400px;
+  border-radius: 5px;
+}
