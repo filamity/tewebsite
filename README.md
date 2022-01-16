@@ -1,5 +1,8 @@
 # Team Enigma Website
 
+![Team Enigma](https://img.shields.io/badge/Team%20Enigma-Harrow%20School-blue)
+![GitHub language count](https://img.shields.io/github/languages/count/filamity/tewebsite) ![GitHub repo size](https://img.shields.io/github/issues/filamity/tewebsite) ![GitHub repo size](https://img.shields.io/github/last-commit/filamity/tewebsite)
+
 The website of Team Enigma, the AI group from Harrow School.
 
 ## To run this project
