@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import BreadcrumbGlobal from "../components/Breadcrumb";
-import styles from "../styles/pages/Projects.module.css";
+import BreadcrumbGlobal from "../../components/Breadcrumb";
+import styles from "../../styles/pages/Projects.module.css";
 import axios from "axios";
-import Card from "../components/Card";
+import Card from "../../components/Card";
 import Link from "next/link";
 
 const Projects = () => {
@@ -445,6 +445,18 @@ const Projects = () => {
             </Form>
           )}
         </div>
+        <section className="buffer-20"></section>
+        <Card className={styles.wrap}>
+          <h1 className="title">Graviton</h1>
+          <div>
+            Count your pushup reps using TensorFlow.js and AI-powered pose
+            estimation.
+          </div>
+          <section className="buffer-10"></section>
+          <Link href="/projects/graviton" passHref>
+            <Button variant="green-7">Try it out</Button>
+          </Link>
+        </Card>
         <section className="buffer-20"></section>
         <Card className={styles.wrap}>
           <h1 className="title">The Enigma Questions</h1>

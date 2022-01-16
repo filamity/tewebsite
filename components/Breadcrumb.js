@@ -45,9 +45,11 @@ const BreadcrumbGlobal = () => {
       {breadcrumbs.map((breadcrumb, i) => {
         return (
           <li key={breadcrumb.href}>
-            <a href={breadcrumb.href}>
-              {convertBreadcrumb(breadcrumb.breadcrumb)}
-            </a>
+            <Link href={breadcrumb.href} passHref>
+              <span className="a">
+                {convertBreadcrumb(breadcrumb.breadcrumb)}
+              </span>
+            </Link>
           </li>
         );
       })}
