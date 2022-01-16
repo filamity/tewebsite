@@ -5,15 +5,21 @@
 .herogrid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
+  gap: 20px 0;
 }
 .playground {
-  grid-column: 1 / -1;
-  height: 600px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   border-radius: 5px;
+}
+.playground[data-show="true"] {
+  height: 600px;
+  grid-column: span 2;
+}
+.playground[data-show="false"] {
+  height: 300px;
+  grid-column: span 1;
 }
 
 .member {
@@ -89,7 +95,12 @@
   color: black;
   height: 300px;
   overflow: hidden;
-  border-radius: 5px 5px 0 0;
+}
+.output[data-show="true"] {
+  border-radius: 5px 0 0 5px;
+}
+.output[data-show="false"] {
+  border-radius: 5px;
 }
 .output p {
   font-size: 16px;
@@ -103,10 +114,15 @@
 @media (min-width: 768px) {
   .herogrid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
-  .playground {
+  .playground[data-show="true"] {
     height: 300px;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .playground[data-show="false"] {
+    height: 300px;
+    grid-template-columns: repeat(1, 1fr);
   }
   .output {
     border-radius: 5px 0 0 5px;

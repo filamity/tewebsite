@@ -65,11 +65,11 @@ const Home = () => {
       <div className={styles.cardgrid}>
         <div className={styles.gridcard}>
           <Link href="/projects" passHref>
-            <span className={`${styles.gridcardtitle} a`}>Project Eco</span>
+            <span className={`${styles.gridcardtitle} a`}>Our Projects</span>
           </Link>
           <p>
-            Giving the community knowledge about the environment and its effect
-            on mental health.
+            Learn about our latest projects, with links to their respective
+            sites.
           </p>
         </div>
         <div className={styles.gridcard}>

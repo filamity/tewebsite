@@ -1,13 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BreadcrumbGlobal from "../components/Breadcrumb";
 import Card from "../components/Card";
 import styles from "../styles/pages/About.module.css";
 import Editor from "@monaco-editor/react";
+import Button from "react-bootstrap/Button";
 
 const About = () => {
-  const [html, setHtml] = useState(
-    `<div class="wrap">\n  <h2>About [Your Name]</h2>\n  <p>[Some text about yourself...]</p>\n  <img src="http://tny.im/r1A" height="150">\n</div>\n\n<style>\n  .wrap {\n    background: #4d9795;\n    padding: 30px;\n    height: 300px;\n    text-align: center;\n  }\n</style>\n`
-  );
+  const [html, setHtml] = useState("");
+  const [showEditor, setShowEditor] = useState(true);
+  const [message, setMessage] = useState("Save changes");
+
+  const saveToLocalStorage = () => {
+    localStorage.setItem("html", html);
+    setMessage("Saved!");
+    setTimeout(() => setMessage("Save changes"), 2000);
+  };
+
+  useEffect(() => {
+    if (localStorage.getItem("html")) {
+      setHtml(localStorage.getItem("html"));
+    } else {
+      setHtml(
+        `<div class="wrap">\n  <h2>About [Your Name]</h2>\n  <p>[Some text about yourself...]</p>\n  <img src="http://tny.im/r1A" height="150">\n</div>\n\n<style>\n  .wrap {\n    background: #4d9795;\n    padding: 30px;\n    height: 300px;\n    text-align: center;\n  }\n</style>\n`
+      );
+    }
+  }, []);
 
   return (
     <div>
@@ -17,33 +34,47 @@ const About = () => {
         <Card className={styles.wrap}>
           <h1 className="title">About</h1>
           <p>
-            Introducing our team - and you! You can edit the HTML code below to
-            make the intro card your very own.
+            Introducing our team - and you! You can use the HTML editor below to
+            make the intro card your very own. Save your progress so you can
+            come back to it later.
           </p>
+          <Button
+            variant="green-7"
+            onClick={() => setShowEditor((prev) => !prev)}
+          >
+            {showEditor ? "Hide" : "Show"} HTML editor
+          </Button>
+          <span className="inlinebuffer-10"></span>
+          <Button variant="green-7" onClick={saveToLocalStorage}>
+            {message}
+          </Button>
+          <section className="buffer-20"></section>
           <div className={styles.herogrid}>
-            <div className={styles.playground}>
-              <div className={styles.output}>
+            <div className={styles.playground} data-show={showEditor}>
+              <div className={styles.output} data-show={showEditor}>
                 <div dangerouslySetInnerHTML={{ __html: html }} />
               </div>
-              <div className={`${styles.input} editor`}>
-                <Editor
-                  language="html"
-                  theme="vs-dark"
-                  value={html}
-                  onChange={(newValue, e) => setHtml(newValue)}
-                  options={{
-                    wordWrap: "on",
-                    scrollBeyondLastLine: false,
-                    padding: {
-                      bottom: 10,
-                      top: 10,
-                    },
-                    minimap: {
-                      enabled: true,
-                    },
-                  }}
-                />
-              </div>
+              {showEditor && (
+                <div className={`${styles.input} editor`}>
+                  <Editor
+                    language="html"
+                    theme="vs-dark"
+                    value={html}
+                    onChange={(newValue, e) => setHtml(newValue)}
+                    options={{
+                      wordWrap: "on",
+                      scrollBeyondLastLine: false,
+                      padding: {
+                        bottom: 10,
+                        top: 10,
+                      },
+                      minimap: {
+                        enabled: true,
+                      },
+                    }}
+                  />
+                </div>
+              )}
             </div>
             <div className={styles.member} data-member="vincent">
               <div className={styles.cardcontent}>
