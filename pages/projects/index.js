@@ -120,6 +120,50 @@ const Projects = () => {
     <div>
       <div className={styles.projects}>
         <BreadcrumbGlobal />
+        <Card className={styles.wrap}>
+          <h1 className="title">Digital Art Competition</h1>
+          <div className={styles.herogrid}>
+            <div>
+              <p><b>A collaboration with the Harrovian</b></p> 
+              <p>
+                We are is cordially inviting submissions of digital artwork on any theme from all students.
+              </p>
+              <p>
+                This includes:
+              </p>
+              <ul>
+                <li>artwork drawn or generated programmatically on a computer, or</li>
+                <li>existing photographs remixed on a computer.</li>
+              </ul>
+              <p>
+                Entries will be curated by the editors and the best ones will be published on the final issue of The Harrovian.
+              
+              </p>
+              <p>
+                <i>Deadline for entering is 18 June, Saturday.</i>
+              </p>
+              <p>
+                Please email submissions and queries to Vincent Song, The Head Master’s, {" "}
+                <a className="a white" href="mailto:19songy@harrowschool.org.uk">
+                19songy@harrowschool.org.uk
+                </a>{" "}.
+              </p>
+              <p>
+                 Students of all skill levels are encouraged to submit. If you are an artist, Adobe Illustrator could be a good place to start tinkering.
+              </p>
+              <p>
+                 If coding is your thing, then you might want to look up “neural style transfer” or “generative adversarial networks”, which are both AI techniques for allowing computers to hone their creative geniuses!
+                 Get started {" "}
+                <a className="a white" href="https://bit.ly/style-trans">
+                here
+                </a>{" "}.
+              </p>
+            </div>
+            <div>
+              <div className={styles.img} data-project="digitalartcomp"></div>
+            </div>
+          </div>
+        </Card>
         <section className="buffer-20"></section>
         <Card className={styles.wrap}>
           <h1 className="title">Project Eco</h1>
