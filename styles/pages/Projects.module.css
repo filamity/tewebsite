@@ -111,7 +111,6 @@
 }
 
 .img {
-  cursor: pointer;
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -120,9 +119,16 @@
 
   /* ive had to move background-image to inline since there is more than one image on the page */
 }
+
 .img[data-project="projecteco"] {
+  cursor: pointer;
   background-image: url("../../public/images/projects/project-eco.png");
 }
 .img[data-project="enigmaquestions"] {
+  cursor: pointer;
   background-image: url("../../public/images/projects/enigma-questions.png");
+}
+
+.img[data-project="digitalartcomp"] {
+  background-image: url("../../public/images/projects/digitalartcomp.png");
 }
