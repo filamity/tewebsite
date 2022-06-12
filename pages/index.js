@@ -32,7 +32,7 @@ const Home = () => {
           </p>
           <div className={styles.signupcard}>
             If you&apos;re interested in joining us, you can{" "}
-            <Link href="https://urls.teamenigma.ml/mailinglist" passHref>
+            <Link href="/signup" passHref>
               <span className="a">sign up here</span>
             </Link>
             !
@@ -79,6 +79,14 @@ const Home = () => {
           <p>
             If you&apos;d like to leave a suggestion or message, you can contact
             us here.
+          </p>
+        </div>
+        <div className={styles.gridcard}>
+          <Link href="/signup" passHref>
+            <span className={`${styles.gridcardtitle} a`}>Sign Up</span>
+          </Link>
+          <p>
+            Become a member of Team Enigma
           </p>
         </div>
       </div>
