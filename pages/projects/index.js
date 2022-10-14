@@ -121,6 +121,22 @@ const Projects = () => {
       <div className={styles.projects}>
         <BreadcrumbGlobal />
         <Card className={styles.wrap}>
+          <h1 className="title">Project Agouti</h1>
+
+
+          <a href="/projects/agouti">
+          <div
+                className={styles.img}
+                data-project="agouti"
+                style={{
+                  backgroundImage: "url(/images/projects/agouti/4.avif)",
+                }}
+              ></div>
+              </a>
+
+        </Card>
+        <section className="buffer-20"></section>
+        <Card className={styles.wrap}>
           <h1 className="title">Digital Art Competition</h1>
           <div className={styles.herogrid}>
             <div>
