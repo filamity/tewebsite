@@ -89,6 +89,14 @@ const Home = () => {
             Become a member of Team Enigma
           </p>
         </div>
+        <div className={styles.cssgridcard}>
+          <Link href="https://css.harrowschool.io" passHref>
+            <span className={`${styles.gridcardtitle} a`}>Computer Science Society</span>
+          </Link>
+          <p>
+            Head to the Computer Science Society Website
+          </p>
+        </div>
       </div>
     </div>
   );
