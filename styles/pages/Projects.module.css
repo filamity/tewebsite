@@ -120,6 +120,19 @@
   /* ive had to move background-image to inline since there is more than one image on the page */
 }
 
+.accurateimg {
+  /* background-size: cover;
+  background-position: center; */
+  height: 100%;
+  min-height: 400px;
+  border-radius: 5px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* ive had to move background-image to inline since there is more than one image on the page */
+}
+
 .img[data-project="projecteco"] {
   cursor: pointer;
   background-image: url("../../public/images/projects/project-eco.png");
