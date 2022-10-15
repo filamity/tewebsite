@@ -29,7 +29,7 @@ const Contact = () => {
             </div>
             <section className="buffer-20"></section>
             <div className={styles.signupcard}>
-              If the Iframe doesn't work, you can use{" "}
+              If the Iframe doesn&apos;t work, you can use{" "}
               <Link href="https://urls.teamenigma.ml/mailinglist" passHref>
                 <span className="a">this link</span>
               </Link>

@@ -124,7 +124,7 @@ const Projects = () => {
           <h1 className="title">Project Agouti</h1>
 
 
-          <a href="/projects/agouti">
+          <Link href="/projects/agouti">
           <div
                 className={styles.img}
                 data-project="agouti"
@@ -132,7 +132,7 @@ const Projects = () => {
                   backgroundImage: "url(/images/projects/agouti/4.avif)",
                 }}
               ></div>
-              </a>
+              </Link>
 
         </Card>
         <section className="buffer-20"></section>

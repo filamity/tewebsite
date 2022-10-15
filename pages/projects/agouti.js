@@ -32,7 +32,7 @@ const Projects = () => {
               <h5>Motivation and Background</h5>
               <p>
                 Traditional vision-based wildlife monitoring methods are limited
-                by weather conditions, the camera's field of view, the size of
+                by weather conditions, the camera&apos; s field of view, the size of
                 target organisms, and their proximity. There is great room for
                 alternative technologies which can monitor wildlife more
                 reliably through other channels: like acoustic monitoring.
@@ -78,12 +78,12 @@ const Projects = () => {
                 storing these tags together with their respective audios for
                 human inspection. We also record readings from temperature,
                 humidity, and light sensors to link audio with the real world,
-                quantifying exactly how the environment affects species'
+                quantifying exactly how the environment affects species&apos; 
                 behaviours.
               </p>
               <p>
-                Agouti broadly addresses "Challenge 2: Wildlife/Biodiversity
-                Conservation". Specifically, we tackle two issues at once:
+                Agouti broadly addresses &quot;Challenge 2: Wildlife/Biodiversity
+                Conservation&quot;. Specifically, we tackle two issues at once:
               </p>
               <ul>
                 <li>
@@ -123,7 +123,7 @@ const Projects = () => {
                 larger than the 16GB SD card slot of the Wio.
               </p>
               <p>
-                Now, let's walk through how we created Agouti. All code and
+                Now, let&apos; s walk through how we created Agouti. All code and
                 other supporting files referenced here can be accessed at our
                 GitHub repo, which contains detailed instructions for setting up
                 each part of our system.
@@ -142,7 +142,7 @@ const Projects = () => {
                 Google. YAMNet analyses the Mel Spectrogram of the input audio
                 data, which is a spectrogram with biased sensitivity to
                 different frequencies according to human hearing. It is a model
-                mainly composed of convolutional layers, trained on Google's
+                mainly composed of convolutional layers, trained on Google&apos; s
                 AudioSet dataset, and outputs an array of scores corresponding
                 to each of the 521 pre-defined classes.
               </p>
@@ -164,7 +164,7 @@ const Projects = () => {
                 though resulted in a better performance in application.
               </p>
               <p>
-                To make the model's final predictions more visual, we also
+                To make the model&apos; s final predictions more visual, we also
                 created a confusion matrix of what the model mixes up. This is
                 shown below:
               </p>
@@ -195,9 +195,9 @@ const Projects = () => {
                 height="338"
                 src="https://www.youtube.com/embed/xQlsOAYU54s"
                 title="Agouti: AI in Action"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               </center>
               
@@ -211,7 +211,7 @@ const Projects = () => {
                 Humidity sensor.
               </p>
               <p>
-                As you'll recall, the Wio Terminal takes care of all the sensor
+                As you&apos; ll recall, the Wio Terminal takes care of all the sensor
                 data and records audio through its mic, whilst the Raspberry Pi
                 runs a big AI acoustics model (too big to fit on Wio) and
                 enables data to be stored onto a USB drive with large storage.
@@ -281,7 +281,7 @@ const Projects = () => {
                 adhesiveness of the acrylic cement which is used to connect and
                 form the entire box.
               </p>
-              <p>And... we've done it!</p>
+              <p>And... we&apos; ve done it!</p>
 
               <div
                 className={styles.accurateimg}
@@ -318,9 +318,9 @@ const Projects = () => {
                 height="338"
                 src="https://www.youtube.com/embed/oUGs_s8gp7g"
                 title="Agouti: Product in Action"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
 
               ></iframe>
               </center>
